@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ instance.course.title }} - {{ instance.year }} Semester {{ instance.semester }}</title>
+</head>
+<body>
+    <h1>{{ instance.course.title }}</h1>
+    <p><strong>Year:</strong> {{ instance.year }}</p>
+    <p><strong>Semester:</strong> {{ instance.semester }}</p>
+    <a href="{% url 'instance-list' %}">Back to Course Instances</a>
+</body>
+</html>

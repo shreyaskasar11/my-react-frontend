@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ course.title }}</title>
+</head>
+<body>
+    <h1>{{ course.title }}</h1>
+    <p><strong>Course Code:</strong> {{ course.course_code }}</p>
+    <p><strong>Description:</strong> {{ course.description }}</p>
+    <a href="{% url 'course-list' %}">Back to Course List</a>
+</body>
+</html>

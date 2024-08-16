@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Course Instances</title>
+</head>
+<body>
+    <h1>Course Instances</h1>
+    <ul>
+        {% for instance in instances %}
+            <li>
+                <a href="{% url 'instance-detail' instance.year instance.semester instance.id %}">
+                    {{ instance.course.title }} - {{ instance.year }} Semester {{ instance.semester }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
